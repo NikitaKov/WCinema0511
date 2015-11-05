@@ -1,0 +1,23 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="/static/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    Сеанс №${id}
+    <p>В процессе разработки</p>
+    <form method = "post" action = "/res">
+    <input type="hidden" value="$id" name="id">
+        #foreach ($r in $rows)
+        <table>
+            <td>$r.rowNum</td>
+        #foreach ($s in $r.seats)
+            <td><input type="radio" name="seat" value="${r.rowNum},${s}"></td>
+            #end
+        </table>
+        #end
+
+        <input type="submit">
+    </form>
+</body>
+</html>

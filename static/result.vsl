@@ -1,0 +1,10 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="/static/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+   $message
+   <a href="/">Поиск</a>
+</body>
+</html>
